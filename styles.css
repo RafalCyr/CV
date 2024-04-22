@@ -14,6 +14,20 @@ body{
 	line-height: 20px;
 }
 
+.dotted-paragraph {
+    position: relative;
+    padding-left: 20px; /* Aby uzyskać miejsce na kropkę */
+  }
+
+  .dotted-paragraph::before {
+    content: "\2022"; /* Kod unicode dla kropki */
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
 .resume_wrapper{
 	display: flex;
 	width: 800px;
@@ -179,3 +193,9 @@ body{
 	color: #0175b2;
 	margin-bottom: 10px;
 }
+
+.styled-hr {
+    height: 2px;
+    background-color: #0175b2; 
+    border: none;
+  }
